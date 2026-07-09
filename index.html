@@ -7,419 +7,520 @@
       rel="icon"
       href="https://cdn5.vectorstock.com/i/1000x1000/73/69/gold-circle-letter-s-logo-vector-14957369.jpg"
     />
-    <title>Saurabh Kushwaha</title>
+    <title>Saurabh Kushwaha — Full Stack Engineer</title>
 
-    <!-- font awesome cdn link  -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
 
-    <!-- custom css file link  -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header section starts  -->
+    <!-- Background grid effect -->
+    <div class="grid-bg"></div>
 
-    <header>
-      <div class="user">
-        <img
-          style="background-color: rgb(224, 211, 211)"
-          src="./image/saurabh_img.jpeg"
-          alt="profile_photo"
-        />
-        <h3 class="name">Saurabh Kushwaha</h3>
-        <p class="post">Full stack developer</p>
-      </div>
+    <div class="portfolio-container">
+      <!-- LEFT SIDEBAR: PROFILE & SYSTEM METADATA -->
+      <header class="profile-sidebar">
+        <div class="sidebar-sticky">
+          <div class="system-tag">
+            <span class="pulse-indicator"></span>
+            FULL STACK ENGINEER — PORTFOLIO
+          </div>
 
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#portfolio">skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">project</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- header section ends -->
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <!-- home section starts  -->
-
-    <section class="home" id="home">
-      <h3>HI THERE !</h3>
-      <h1>I'M <span>Saurabh Kushwaha</span></h1>
-      <p style="font-size: 5rem">a bit more about me :</p>
-      <div>
-        <a href="#about"
-          ><button class="btn">about me <i class="fas fa-user"></i></button
-        ></a>
-        <a target="_blank" href="./Saurabhkushwaha.pdf"
-          ><button class="btn">My Resume <i class="fas fa-download"></i></button
-        ></a>
-      </div>
-    </section>
-
-    <!-- home section ends -->
-
-    <!-- about section starts  -->
-
-    <section class="about" id="about">
-      <h1 class="heading"><span>about</span> me</h1>
-
-      <div class="row">
-        <div class="info">
-          <div class="home" id="home">
-            <p>
-              Full Stack Engineer with 4 years of experience building scalable
-              SaaS and enterprise applications using React.js, Next.js, Node.js,
-              Express.js, and MongoDB. Experienced in frontend architecture,
-              REST API development, authentication systems, and AI-powered
-              product development. Skilled in building high-performance,
-              user-centric applications from concept to production.
+          <div class="profile-header">
+            <h1 class="dev-name">
+              <span class="first-name">Saurabh</span>
+              <span class="last-name">Kushwaha</span>
+            </h1>
+            <p class="tagline">
+              I design and ship production systems — from enterprise banking
+              platforms at scale to an AI-powered SaaS product I built solo, end
+              to end.
             </p>
           </div>
-          <!-- <div class="img_marping">
-            <img
-              src="https://r7q6w9z6.rocketcdn.me/career/wp-content/uploads/2021/06/2-46.gif"
-              alt="Saurabh Kushwaha"
-            />
-          </div> -->
-        </div>
-      </div>
-    </section>
-    <section class="about portfolio" id="portfolio">
-      <h1 class="heading"><span>Skills</span></h1>
-      <div class="row">
-        <div class="info">
-          <div class="home" id="home">
-            <div>
-              <h2 class="heading"><span>Languages</span></h2>
-              <div class="counter">
-                <div class="box">
-                  <img class="styled_images" src="./image/html-5.svg" alt="" />
-                  <span>HTML5 </span>
-                </div>
 
-                <div class="box">
-                  <img class="styled_images" src="./image/css-3.svg" alt="" />
-                  <span>CSS3 </span>
+          <!-- Action Links -->
+          <div class="action-buttons">
+            <div class="main-actions">
+              <a href="mailto:kushwahasaurabh219@gmail.com" class="btn-primary">Email Me <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="./Saurabhkushwaha.pdf" target="_blank" class="btn-secondary"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/Saurabh-kushwaha" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/saurbhkushwaha/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- Spec Data Grid -->
+          <div class="spec-grid">
+            <div class="spec-item">
+              <span class="spec-label">ROLE</span>
+              <span class="spec-value highlight-accent"
+                >FULL STACK ENGINEER</span
+              >
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">EXPERIENCE</span>
+              <span class="spec-value">4+ YEARS</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">STATUS</span>
+              <span class="spec-value status-badge"
+                ><span class="pulse-green"></span> OPEN TO WORK</span
+              >
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">BASED</span>
+              <span class="spec-value">KANPUR, IN — REMOTE READY</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">REV</span>
+              <span class="spec-value">2026.07</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- RIGHT CONTENT: SHEETS 01 TO 05 -->
+      <main class="content-sheets">
+        <!-- SHEET 01 / 05: Currently Building -->
+        <section class="sheet-section" id="sheet-01">
+          <div class="sheet-header">
+            <span class="sheet-number">SHEET 01 / 05</span>
+            <h2 class="sheet-title">Currently Building</h2>
+          </div>
+
+          <div class="sheet-content">
+            <div class="card build-card">
+              <div class="card-status">
+                <span class="badge badge-live">● Live — Solo-Built</span>
+              </div>
+              <h3 class="card-title text-gradient">ReviewQR AI</h3>
+              <p class="card-desc">
+                An AI-powered SaaS platform that helps local businesses grow
+                Google reviews through QR-based smart feedback flows, with
+                Gemini-powered multilingual, sentiment-aware review generation.
+              </p>
+
+              <div class="tag-group">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Gemini API</span>
+              </div>
+
+              <div class="repo-action">
+                <a
+                  href="https://github.com/Saurabh-kushwaha/ai-powered-google-review"
+                  target="_blank"
+                  class="text-link"
+                  >View Repository <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+
+              <!-- Specs details -->
+              <div class="spec-details-grid">
+                <div class="sub-spec">
+                  <span class="sub-label">ARCHITECTURE</span>
+                  <span class="sub-val">Solo — full stack</span>
                 </div>
-                <div class="box">
-                  <img
-                    class="styled_images"
-                    src="./image/javascript.svg"
-                    alt=""
-                  />
-                  <span>JavaScript </span>
+                <div class="sub-spec">
+                  <span class="sub-label">FRONTEND</span>
+                  <span class="sub-val">Next.js App Router</span>
+                </div>
+                <div class="sub-spec">
+                  <span class="sub-label">BACKEND</span>
+                  <span class="sub-val">Auth, REST APIs, DB</span>
+                </div>
+                <div class="sub-spec">
+                  <span class="sub-label">AI LAYER</span>
+                  <span class="sub-val">Gemini API</span>
+                </div>
+                <div class="sub-spec">
+                  <span class="sub-label">FEATURES</span>
+                  <span class="sub-val">Analytics dashboard</span>
+                </div>
+                <div class="sub-spec">
+                  <span class="sub-label">STARTED</span>
+                  <span class="sub-val">Mar 2026</span>
                 </div>
               </div>
             </div>
-            <div>
-              <h2 class="heading"><span>Front-End</span></h2>
-              <div class="counter">
-                <div class="box">
-                  <img class="styled_images" src="./image/react.svg" alt="" />
-                  <span>React </span>
+          </div>
+        </section>
+
+        <!-- SHEET 02 / 05: Work Log -->
+        <section class="sheet-section" id="sheet-02">
+          <div class="sheet-header">
+            <span class="sheet-number">SHEET 02 / 05</span>
+            <h2 class="sheet-title">Work Log</h2>
+          </div>
+
+          <div class="sheet-content">
+            <div class="timeline">
+              <!-- Job 1 -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="time-period">MAR 2026 — PRESENT</span>
+                  <span class="company-location">Remote, self-directed</span>
                 </div>
-                <div class="box">
-                  <img class="styled_images" src="./image/redux.svg" alt="" />
-                  <span>redux </span>
+                <div class="timeline-info">
+                  <h3 class="role-title">Full Stack Engineer</h3>
+                  <h4 class="company-name text-gradient">ReviewQR AI</h4>
+                  <ul class="task-list">
+                    <li>
+                      Architected and built an AI review-automation SaaS end to
+                      end using Next.js, TypeScript, Node.js and MongoDB.
+                    </li>
+                    <li>
+                      Integrated Gemini API for sentiment-aware, multilingual AI
+                      review generation.
+                    </li>
+                    <li>
+                      Owns the full stack solo: auth, APIs, schema design,
+                      analytics dashboard, and deployment.
+                    </li>
+                  </ul>
                 </div>
-                <div class="box">
-                  <img
-                    class="styled_images"
-                    src="./image/jquery-logo.png"
-                    alt=""
-                  />
-                  <span>jquery</span>
+              </div>
+
+              <!-- Job 2 -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="time-period">JUL 2023 — MAR 2026</span>
+                  <span class="company-location">Mumbai, India</span>
                 </div>
-                <div class="box">
-                  <img
-                    class="styled_images"
-                    src="./image/Tailwind_CSS_Logo.svg.png"
-                    alt=""
-                  />
-                  <span>Tailwind CSS</span>
+                <div class="timeline-info">
+                  <h3 class="role-title">Full Stack Developer</h3>
+                  <h4 class="company-name">Nvest Solution</h4>
+                  <ul class="task-list">
+                    <li>
+                      Led frontend on enterprise banking applications for SBI
+                      and PNB, supporting large-scale financial workflows.
+                    </li>
+                    <li>
+                      Built reusable UI components consuming REST APIs, cutting
+                      new-feature dev time by 30%.
+                    </li>
+                    <li>
+                      Worked with backend engineers on API contract design for
+                      secure, high-compliance banking workflows.
+                    </li>
+                    <li>
+                      Improved page load time by 25% via lazy loading and code
+                      splitting.
+                    </li>
+                  </ul>
                 </div>
-                <div class="box">
-                  <img
-                    class="styled_images"
-                    src="./image/material-ui.svg"
-                    alt=""
-                  />
-                  <span>Mat-UI </span>
+              </div>
+
+              <!-- Job 3 -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="time-period">AUG 2022 — JUL 2023</span>
+                  <span class="company-location"
+                    >Pennsylvania, US (Remote)</span
+                  >
                 </div>
-                <div class="box">
-                  <img class="styled_images" src="./image/styled.png" alt="" />
-                  <span>Styled </span>
+                <div class="timeline-info">
+                  <h3 class="role-title">Frontend Developer</h3>
+                  <h4 class="company-name">Trueloader</h4>
+                  <ul class="task-list">
+                    <li>
+                      Independently built and scaled a data integration and
+                      analytics platform frontend from Figma to production.
+                    </li>
+                    <li>
+                      Integrated complex REST APIs for large-scale data
+                      ingestion, transformation and visualization.
+                    </li>
+                    <li>
+                      Owned end-to-end frontend architecture while working
+                      remotely with a US-based team.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Job 4 -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="time-period">JUN 2022 — AUG 2022</span>
+                  <span class="company-location">Noida, India</span>
+                </div>
+                <div class="timeline-info">
+                  <h3 class="role-title">Full Stack Developer</h3>
+                  <h4 class="company-name">Applore Technologies</h4>
+                  <ul class="task-list">
+                    <li>
+                      Built a full-stack MERN e-commerce platform (Choice Monk)
+                      for healthy products.
+                    </li>
+                    <li>
+                      Designed REST APIs for product management, authentication,
+                      and order processing.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h2 class="heading"><span>Back-End</span></h2>
-              <div class="counter">
-                <div class="box">
-                  <img class="styled_images" src="./image/nodejs.svg" alt="" />
-                  <span>Node </span>
+          </div>
+        </section>
+
+        <!-- SHEET 03 / 05: Stack — Bill of Materials -->
+        <section class="sheet-section" id="sheet-03">
+          <div class="sheet-header">
+            <span class="sheet-number">SHEET 03 / 05</span>
+            <h2 class="sheet-title">Stack — Bill of Materials</h2>
+          </div>
+
+          <div class="sheet-content">
+            <div class="bom-grid">
+              <!-- Category: Frontend -->
+              <div class="bom-card">
+                <h3 class="bom-category-title">
+                  <i class="fa-solid fa-code"></i> Frontend
+                </h3>
+                <div class="bom-items">
+                  <div class="bom-item-tag">React.js</div>
+                  <div class="bom-item-tag">Next.js</div>
+                  <div class="bom-item-tag">TypeScript</div>
+                  <div class="bom-item-tag">JavaScript ES6+</div>
+                  <div class="bom-item-tag">Redux Toolkit</div>
+                  <div class="bom-item-tag">React Query</div>
+                  <div class="bom-item-tag">Tailwind CSS</div>
+                  <div class="bom-item-tag">Material UI</div>
                 </div>
-                <div class="box">
-                  <img class="styled_images" src="./image/express.png" alt="" />
-                  <span>Express</span>
+              </div>
+
+              <!-- Category: Backend -->
+              <div class="bom-card">
+                <h3 class="bom-category-title">
+                  <i class="fa-solid fa-server"></i> Backend
+                </h3>
+                <div class="bom-items">
+                  <div class="bom-item-tag">Node.js</div>
+                  <div class="bom-item-tag">Express.js</div>
+                  <div class="bom-item-tag">REST APIs</div>
+                  <div class="bom-item-tag">PostgreSQL</div>
+                  <div class="bom-item-tag">MongoDB</div>
+                  <div class="bom-item-tag">Prisma ORM</div>
+                  <div class="bom-item-tag">JWT / OAuth</div>
+                  <div class="bom-item-tag">RBAC</div>
                 </div>
-                <div class="box">
-                  <img class="styled_images" src="./image/mongodb.svg" alt="" />
+              </div>
+
+              <!-- Category: Cloud & DevOps -->
+              <div class="bom-card">
+                <h3 class="bom-category-title">
+                  <i class="fa-solid fa-cloud"></i> Cloud & DevOps
+                </h3>
+                <div class="bom-items">
+                  <div class="bom-item-tag">AWS EC2/S3/RDS</div>
+                  <div class="bom-item-tag">CloudFront</div>
+                  <div class="bom-item-tag">Docker</div>
+                  <div class="bom-item-tag">GitHub Actions</div>
+                  <div class="bom-item-tag">CI/CD</div>
+                  <div class="bom-item-tag">Nginx</div>
+                  <div class="bom-item-tag">PM2</div>
+                  <div class="bom-item-tag">Vercel</div>
+                </div>
+              </div>
+
+              <!-- Category: Architecture & Tools -->
+              <div class="bom-card">
+                <h3 class="bom-category-title">
+                  <i class="fa-solid fa-cubes"></i> Architecture & Tools
+                </h3>
+                <div class="bom-items">
+                  <div class="bom-item-tag">Redis</div>
+                  <div class="bom-item-tag">Socket.io</div>
+                  <div class="bom-item-tag">BullMQ</div>
+                  <div class="bom-item-tag">System Design</div>
+                  <div class="bom-item-tag">Jest</div>
+                  <div class="bom-item-tag">Postman</div>
+                  <div class="bom-item-tag">Figma</div>
+                  <div class="bom-item-tag">Git</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SHEET 04 / 05: Selected Projects -->
+        <section class="sheet-section" id="sheet-04">
+          <div class="sheet-header">
+            <span class="sheet-number">SHEET 04 / 05</span>
+            <h2 class="sheet-title">Selected Projects</h2>
+          </div>
+
+          <div class="sheet-content">
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-spec-card">
+                <div class="project-header">
+                  <span class="spec-id">SPEC — 01</span>
+                  <h3 class="project-title">ReviewQR AI</h3>
+                </div>
+                <p class="project-desc">
+                  AI-powered SaaS helping local businesses grow Google reviews
+                  via QR-based feedback flows with sentiment-aware AI
+                  generation.
+                </p>
+                <div class="project-tags">
+                  <span>Next.js</span>
+                  <span>Gemini API</span>
                   <span>MongoDB</span>
                 </div>
-              </div>
-            </div>
-            <!-- Other Tech Stacks -->
-            <div>
-              <h2 class="heading"><span>Other Tech Stacks</span></h2>
-              <div class="counter">
-                <div class="box">
-                  <img
-                    class="styled_images"
-                    src="./image/postman-icon.svg"
-                    alt=""
-                  />
-                  <span>Postman</span>
-                </div>
-                <div class="box">
-                  <img
-                    class="styled_images"
-                    src="./image/github-icon.svg"
-                    alt=""
-                  />
-                  <span>GitHub</span>
+                <div class="project-link-wrapper">
+                  <a
+                    href="https://github.com/Saurabh-kushwaha/ai-powered-google-review"
+                    target="_blank"
+                    class="project-link"
+                    >View repo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
                 </div>
               </div>
+
+              <!-- Project 2 -->
+              <div class="project-spec-card">
+                <div class="project-header">
+                  <span class="spec-id">SPEC — 02</span>
+                  <h3 class="project-title">Choice Monk</h3>
+                </div>
+                <p class="project-desc">
+                  Full-stack e-commerce platform for healthy products, built on
+                  the MERN stack with complete auth and order management.
+                </p>
+                <div class="project-tags">
+                  <span>MongoDB</span>
+                  <span>Express</span>
+                  <span>React</span>
+                  <span>Node.js</span>
+                </div>
+                <div class="project-link-wrapper">
+                  <a
+                    href="https://github.com/Saurabh-kushwaha"
+                    target="_blank"
+                    class="project-link"
+                    >View on GitHub
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-spec-card">
+                <div class="project-header">
+                  <span class="spec-id">SPEC — 03</span>
+                  <h3 class="project-title">AI Resume Analyzer</h3>
+                </div>
+                <p class="project-desc">
+                  SaaS tool that evaluates resumes against job descriptions with
+                  ATS scoring, keyword-gap analysis, and AI-driven suggestions.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Node.js</span>
+                </div>
+                <div class="project-link-wrapper">
+                  <a
+                    href="https://github.com/Saurabh-kushwaha"
+                    target="_blank"
+                    class="project-link"
+                    >View repo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends -->
+        </section>
 
-    <!-- experience section starts -->
-
-    <section class="education" id="experience">
-      <h1 class="heading"><span>Experience</span></h1>
-
-      <div class="box-container">
-        <div class="box">
-          <img
-            class="project_image"
-            src="./image/choicemonk.png"
-            alt="choicemonk"
-          />
-
-          <h3>Choicemonk</h3>
-          <p>
-            Choicemonk is a consumer product recommendation platform. We are an
-            independent company with a vision to better the life of each
-            consumer by saving their Time
-          </p>
-          <p>
-            HTML5 || CSS3 || JavaScript || React.js || Node.js || MongoDB ||
-            Express
-          </p>
-          <div>
-            <a target="_blank" href="https://choicemonk.com/"
-              ><button class="btn">Visit <i class="fas fa-download"></i></button
-            ></a>
+        <!-- SHEET 05 / 05: Contact -->
+        <section class="sheet-section" id="sheet-05">
+          <div class="sheet-header">
+            <span class="sheet-number">SHEET 05 / 05</span>
+            <h2 class="sheet-title">Contact</h2>
           </div>
-        </div>
 
-        <!--  -->
-        <div class="box">
-          <img
-            class="project_image"
-            src="./image/trueloader.png"
-            alt="Trueloader"
-          />
-
-          <h3>Trueloader</h3>
-          <p>
-            Trueloader is a next-generation cloud data integration platform
-            powered by Superclouds that streamlines your data-flow schematics,
-            enabling high-speed business
-          </p>
-          <p>HTML || CSS || JavaScript || jquery || Tailwind CSS</p>
-          <div>
-            <a target="_blank" href="https://us-nh-1.ex.trueloader.com/"
-              ><button class="btn">Visit <i class="fas fa-download"></i></button
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- education section starts  -->
-
-    <section class="education" id="education">
-      <h1 class="heading"><span>Projects</span></h1>
-
-      <div class="box-container">
-        <div class="box">
-          <img class="project_image" src="./image/reviewQr.png" alt="" />
-
-          <h3>
-            ReviewQR AI – AI-Powered Google Review & Reputation Management
-            Platform
-          </h3>
-
-          <p>
-            Built an AI-powered SaaS platform that helps local businesses
-            increase Google Reviews through smart QR codes, AI-generated review
-            assistance, and reputation management workflows. Customers can leave
-            reviews in seconds by scanning a QR code, while businesses gain
-            valuable feedback insights through a centralized dashboard.
-          </p>
-          <p>
-            React.js, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js,
-            MongoDB, OpenAI API / AI Integration Vercel QR Code Generation
-            Libraries REST APIs
-          </p>
-          <div>
-            <a
-              target="_blank"
-              href="https://ai-powered-google-review.vercel.app/"
-            >
-              <button class="btn">Visit <i class="fas fa-download"></i></button
-            ></a>
-            <a
-              target="_blank"
-              href="https://github.com/Saurabh-kushwaha/ai-powered-google-review"
-              ><button class="btn">
-                Source <i class="fas fa-download"></i></button
-            ></a>
-          </div>
-        </div>
-
-        <div class="box">
-          <img
-            class="project_image"
-            src="./image/travel.png"
-            alt="Travel_Clone"
-          />
-
-          <h3>Travel Clone</h3>
-          <p>
-            Travel Sector E-commerce website was built with all features,
-            like,Book destination with Date, search for the destination, Read
-            about destination, Login-Sign Up. Team of 4.
-          </p>
-          <p>HTML5 || CSS3 || JavaScript</p>
-          <div>
-            <a
-              target="_blank"
-              href="https://travel-project-by-team.netlify.app/"
-              ><button class="btn">Visit <i class="fas fa-download"></i></button
-            ></a>
-            <a
-              target="_blank"
-              href="https://github.com/ketanyadav8807/Travel_Clone"
-              ><button class="btn">
-                Source <i class="fas fa-download"></i></button
-            ></a>
-          </div>
-        </div>
-
-        <!--  -->
-        <div class="box">
-          <img
-            class="project_image"
-            src="./image/furlenco.png"
-            alt="Travel_Clone"
-          />
-
-          <h3>furlenco Clone</h3>
-          <p>
-            Furlenco is an Indian online furniture rental platform that was
-            incorporated in 2012,
-          </p>
-          <p>React || redux || MongoDB || nodejs || express.js</p>
-          <div>
-            <a target="_blank" href="https://furlenco.netlify.app/"
-              ><button class="btn">Visit <i class="fas fa-download"></i></button
-            ></a>
-            <a target="_blank" href="https://github.com/Ashishpal438/Furlenco"
-              ><button class="btn">
-                Source <i class="fas fa-download"></i></button
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact section starts  -->
-
-    <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> me</h1>
-
-      <div class="row">
-        <div class="content contact_me">
-          <h3 class="title">contact info</h3>
-
-          <div class="info">
-            <a target="_blank" href="mailto:kushwahasaurabh219@gmail.com">
-              <h3 style="cursor: pointer">
-                <i class="fas fa-envelope"></i>kushwahasaurabh219@gmail.com
+          <div class="sheet-content">
+            <div class="contact-sheet">
+              <h3 class="contact-headline">
+                Let's build something that ships.
               </h3>
-            </a>
+              <p class="contact-sub">
+                Open to full-time Full Stack / Frontend roles, remote or hybrid.
+                Also open to collaborating on web dev or AI-integration side
+                projects.
+              </p>
 
-            <a target="_blank" href="tel:7393084880">
-              <h3 style="cursor: pointer">
-                <i class="fas fa-phone"></i> +91 7393084880
-              </h3>
-            </a>
-
-            <h3>
-              <i class="fas fa-map-marker-alt"></i>Kanpur Uttar Pradesh, india -
-              209402.
-            </h3>
-
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/saurbhkushwaha/"
-            >
-              <h3 style="cursor: pointer">
-                <i class="fab fa-linkedin-in"></i>LinkedIn
-              </h3>
-            </a>
-
-            <a target="_blank" href="https://github.com/Saurabh-kushwaha">
-              <h3 style="cursor: pointer">
-                <i class="fab fa-github"></i>GitHub
-              </h3>
-            </a>
-            <a target="_blank" href="https://medium.com/@kushwahasaurabh219">
-              <h3 style="cursor: pointer">
-                <i class="fab fa-medium-m"></i>Medium
-              </h3>
-            </a>
+              <div class="contact-links-grid">
+                <a
+                  href="mailto:kushwahasaurabh219@gmail.com"
+                  class="contact-link-item"
+                >
+                  <span class="contact-method">Email</span>
+                  <span class="contact-detail"
+                    >kushwahasaurabh219@gmail.com</span
+                  >
+                  <span class="contact-arrow">↗</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/saurbhkushwaha/"
+                  target="_blank"
+                  class="contact-link-item"
+                >
+                  <span class="contact-method">LinkedIn</span>
+                  <span class="contact-detail"
+                    >linkedin.com/in/saurbhkushwaha</span
+                  >
+                  <span class="contact-arrow">↗</span>
+                </a>
+                <a
+                  href="https://github.com/Saurabh-kushwaha"
+                  target="_blank"
+                  class="contact-link-item"
+                >
+                  <span class="contact-method">GitHub</span>
+                  <span class="contact-detail"
+                    >github.com/Saurabh-kushwaha</span
+                  >
+                  <span class="contact-arrow">↗</span>
+                </a>
+                <a
+                  href="https://medium.com/@saurabh-kushwaha"
+                  target="_blank"
+                  class="contact-link-item"
+                >
+                  <span class="contact-method">Medium</span>
+                  <span class="contact-detail"
+                    >medium.com/@kushwahasaurabh219</span
+                  >
+                  <span class="contact-arrow">↗</span>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </main>
+    </div>
 
-    <!-- contact section ends -->
-
-    <!-- scroll top button  -->
-
-    <a href="#home" class="top">
-      <img src="image/scroll-top-img.png" alt="" />
-    </a>
-
-    <!-- jquery cdn link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- custom js file link  -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,35 +1,27 @@
-$(document).ready(function () {
-  $("#menu").click(function () {
-    $(this).toggleClass("fa-times")
-    $("header").toggleClass("toggle")
-  })
+document.addEventListener("DOMContentLoaded", () => {
+  // Intersection Observer for scroll-reveal animations
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
 
-  $(window).on("scroll load", function () {
-    $("#menu").removeClass("fa-times")
-    $("header").removeClass("toggle")
+  const revealCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        // Once revealed, no need to track it anymore
+        observer.unobserve(entry.target);
+      }
+    });
+  };
 
-    if ($(window).scrollTop() > 0) {
-      $(".top").show()
-    } else {
-      $(".top").hide()
-    }
-  })
+  const observer = new IntersectionObserver(revealCallback, observerOptions);
 
-  // smooth scrolling
-
-  $('a[href*="#"]').on("click", function (e) {
-    e.preventDefault()
-
-    $("html, body").animate(
-      {
-        scrollTop: $($(this).attr("href")).offset().top,
-      },
-      500,
-      "linear"
-    )
-  })
-})
-
-function resume() {
-  console.log("hii")
-}
+  // Select all sections/sheets to reveal
+  const sheets = document.querySelectorAll(".sheet-section");
+  sheets.forEach((sheet) => {
+    sheet.classList.add("reveal-on-scroll");
+    observer.observe(sheet);
+  });
+});
